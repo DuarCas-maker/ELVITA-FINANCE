@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #f7f3ec;
+  color: #292b32;
+}
+
+::selection {
+  background: #c7a875;
+  color: #101835;
+}
+
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
+
+a,
+button {
+  transition:
+    color 180ms ease,
+    background-color 180ms ease,
+    border-color 180ms ease,
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #c7a875;
+  outline-offset: 3px;
+}
+
+.section {
+  @apply px-5 py-16 sm:px-8 lg:px-12 lg:py-24;
+}
+
+.container-wide {
+  @apply mx-auto max-w-7xl;
+}
+
+.field {
+  @apply w-full rounded-none border border-line bg-white/80 px-4 py-3 text-sm text-charcoal outline-none placeholder:text-charcoal/40 focus:border-gold;
+}
+
+.label {
+  @apply mb-2 block text-xs font-semibold uppercase tracking-[0.16em] text-gold;
+}
+
+.error-text {
+  @apply mt-2 text-sm font-semibold text-red-700;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center gap-2 border border-navy bg-navy px-6 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-white no-underline hover:border-gold hover:bg-gold disabled:cursor-not-allowed disabled:opacity-60;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center gap-2 border border-gold/45 bg-transparent px-6 py-3 text-sm font-semibold uppercase tracking-[0.14em] text-navy no-underline hover:border-navy hover:bg-navy hover:text-white disabled:cursor-not-allowed disabled:opacity-60;
+}
+
+.editorial-grid {
+  background-image:
+    linear-gradient(rgba(158, 120, 73, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(158, 120, 73, 0.07) 1px, transparent 1px);
+  background-size: 72px 72px;
+}

@@ -1,0 +1,19 @@
+{
+  "appId": "elvita-finance",
+  "brandName": "ELVITA FINANCE",
+  "type": "website",
+  "status": "ready-for-clean-build",
+  "suggestedDomain": "elvitafinance.com",
+  "deployment": {
+    "platform": "Coolify",
+    "rootDirectory": "apps/elvita-finance",
+    "healthEndpoint": "/api/health",
+    "port": 3000
+  },
+  "fundingConfig": {
+    "formId": "EF-001",
+    "company": "elvita",
+    "source": "elvita-finance-web",
+    "payloadFormat": "json-v2"
+  }
+}
